@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grade 8 Computer Subject - Homework Tracker</title>
+<title>Grade 8 Computer Science - Weekly Homework Evaluation</title>
 <style>
   * {
     box-sizing: border-box;
@@ -52,7 +52,7 @@
     margin-top: 4px;
   }
 
-  .date-badge {
+  .week-badge {
     background: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.25);
     padding: 10px 18px;
@@ -140,10 +140,10 @@
   .class-tier .tier-desc { background-color: #fffbeb; color: #92400e; }
   .class-tier tr:hover { background-color: #fefce8; }
 
-  /* 4. Blacklist */
-  .blacklist .tier-header { background: linear-gradient(135deg, #dc2626, #ef4444); }
-  .blacklist .tier-desc { background-color: #fef2f2; color: #991b1b; }
-  .blacklist tr:hover { background-color: #fef2f2; }
+  /* 4. Action Needed */
+  .action-needed .tier-header { background: linear-gradient(135deg, #dc2626, #ef4444); }
+  .action-needed .tier-desc { background-color: #fef2f2; color: #991b1b; }
+  .action-needed tr:hover { background-color: #fef2f2; }
 
   /* Table Styling */
   table {
@@ -165,6 +165,13 @@
     color: #64748b;
     text-align: center;
     border-right: 1px solid #f1f5f9;
+  }
+
+  td.empty-msg {
+    text-align: center;
+    color: #94a3b8;
+    font-style: italic;
+    padding: 25px 16px;
   }
 
   tr:last-child td {
@@ -195,11 +202,11 @@
   <!-- Header -->
   <div class="header">
     <div class="header-title">
-      <h1>GRADE 8 — COMPUTER SUBJECT</h1>
-      <p>Homework Performance &amp; Student Evaluation Board</p>
+      <h1>GRADE 8 — WEEKLY HOMEWORK EVALUATION</h1>
+      <p>Computer Science &amp; ICT Student Progress Update</p>
     </div>
-    <div class="date-badge" contenteditable="true" title="Click to edit date">
-      Date: Wednesday, Nov 25, 2026
+    <div class="week-badge" contenteditable="true" title="Click to edit week and date">
+      Week 1 | Nov 25, 2026
     </div>
   </div>
 
@@ -210,17 +217,17 @@
     <div class="tier-card superstars">
       <div class="tier-header">
         <h2>★ Superstars</h2>
-        <span class="count-pill">6</span>
+        <span class="count-pill">8</span>
       </div>
       <div class="tier-desc">Everything worked completely &amp; accurately</div>
       <table contenteditable="true">
         <tr><td class="num">1</td><td>Robel Michael Haile Tsegay</td></tr>
         <tr><td class="num">2</td><td>Shingirwa Weld Esous Ghergis Hadrekenel</td></tr>
-        <tr><td class="num">3</td><td>Nesiba Nuredin Abdulkadir Seid</td></tr>
-        <tr><td class="num">4</td><td>Rimana Solomon Eyob Hagos</td></tr>
-        <tr><td class="num">5</td><td>Reem Bokri Tesfay Selay</td></tr>
-        <tr><td class="num">6</td><td>Renda Osman Saleh Seadin</td></tr>
-        <tr><td class="num">7</td><td>Moubarik Mohamed Daher Duali</td></tr>
+        <tr><td class="num">3</td><td>Moubarik Mohamed Daher Duali</td></tr>
+        <tr><td class="num">4</td><td>Nesiba Nuredin Abdulkadir Seid</td></tr>
+        <tr><td class="num">5</td><td>Rimana Solomon Eyob Hagos</td></tr>
+        <tr><td class="num">6</td><td>Reem Bokri Tesfay Selay</td></tr>
+        <tr><td class="num">7</td><td>Renda Osman Saleh Seadin</td></tr>
         <tr><td class="num">8</td><td>Fertuna Tesfay Girmay Gebru</td></tr>
       </table>
     </div>
@@ -229,12 +236,11 @@
     <div class="tier-card stars">
       <div class="tier-header">
         <h2>☆ Stars</h2>
-        <span class="count-pill">2</span>
+        <span class="count-pill">0</span>
       </div>
       <div class="tier-desc">Worked beautifully with minor mistakes</div>
       <table contenteditable="true">
-        <tr><td class="num"></td><td></td></tr>
-        <tr><td class="num"></td><td></td></tr>
+        <tr><td class="empty-msg">No students in this tier this week</td></tr>
       </table>
     </div>
 
@@ -251,13 +257,13 @@
       </table>
     </div>
 
-    <!-- 4. BLACKLIST -->
-    <div class="tier-card blacklist">
+    <!-- 4. ACTION NEEDED -->
+    <div class="tier-card action-needed">
       <div class="tier-header">
-        <h2>✖ Blacklist</h2>
+        <h2>! Action Needed</h2>
         <span class="count-pill">9</span>
       </div>
-      <div class="tier-desc">Did NOT work their homework</div>
+      <div class="tier-desc">Homework not submitted — Catch up required</div>
       <table contenteditable="true">
         <tr><td class="num">1</td><td>Newal Bashir Hagag Osman</td></tr>
         <tr><td class="num">2</td><td>Asmait Mahari Haile Gebremariam</td></tr>
@@ -276,7 +282,7 @@
   <!-- Footer -->
   <div class="footer">
     <span><strong>Total Students:</strong> 19</span>
-    <span>Tip: Click on the date or any student cell to edit directly on screen.</span>
+    <span>Tip: Click on the week badge or any student cell to update for next week.</span>
   </div>
 </div>
 
